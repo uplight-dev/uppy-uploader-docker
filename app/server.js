@@ -13,7 +13,7 @@ app.use(express.static('www'))
 
 const options = {
     server: {
-      host: 'localhost:3020',
+      host: '0.0.0.0:3020',
       protocol: 'http',
     },
     filePath: '/app/upload'
