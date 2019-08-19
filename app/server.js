@@ -2,6 +2,7 @@
 
 const express = require('express');
 var companion = require('@uppy/companion')
+const bodyParser = require('body-parser')
 
 // Constants
 const PORT = 8080;
