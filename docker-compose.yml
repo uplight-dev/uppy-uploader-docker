@@ -6,7 +6,7 @@ services:
     - ./upload:/app/upload
     ports: 
     - "8090:8080"
-    - "8091:3020"
+    - "3020:3020"
   tusd:
     image: tusproject/tusd
     ports:
