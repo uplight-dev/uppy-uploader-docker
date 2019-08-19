@@ -10,6 +10,11 @@
     var uppy = Uppy.Core({
         autoProceed: true
     })
+    const Url = Uppy.Url;
     uppy.use(Uppy.DragDrop, { target: '.UppyDragDrop' })
     uppy.use(Uppy.Tus, { endpoint: 'http://sbx01.id:1080/files/' })
+    uppy.use(Uppy.Url, {
+        target: Dashboard
+    });
+    
 </script>
