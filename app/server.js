@@ -25,6 +25,9 @@ app.use((req, res, next) => {
     next()
 });
 
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
+
 const options = {
     server: {
       host: '0.0.0.0:3020',
@@ -34,6 +37,3 @@ const options = {
   }
   
 app.use(companion.app(options))
-
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
