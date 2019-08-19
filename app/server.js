@@ -44,4 +44,4 @@ console.log('comp')
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 
-companion.socket(server, options)
+companion.socket(app, options)
