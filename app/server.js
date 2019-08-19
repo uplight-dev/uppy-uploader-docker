@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+var companion = require('@uppy/companion')
 
 // Constants
 const PORT = 8080;
