@@ -11,8 +11,39 @@
         autoProceed: true
     })
     const Url = Uppy.Url;
+    const Dashboard = Uppy.Dashboard
+
     uppy.use(Uppy.DragDrop, { target: '.UppyDragDrop' })
     uppy.use(Uppy.Tus, { endpoint: 'http://sbx01.id:1080/files/' })
+    uppy.use(Dashboard, {
+        target: 'body',
+        trigger: '#uppy-select-files',
+        inline: false,
+        width: 750,
+        height: 550,
+        thumbnailWidth: 280,
+        defaultTabIcon: defaultTabIcon,
+        showLinkToFileUploadResult: true,
+        showProgressDetails: false,
+        hideUploadButton: false,
+        hideRetryButton: false,
+        hidePauseResumeButton: false,
+        hideCancelButton: false,
+        hideProgressAfterFinish: false,
+        note: null,
+        closeModalOnClickOutside: false,
+        closeAfterFinish: false,
+        disableStatusBar: false,
+        disableInformer: false,
+        disableThumbnailGenerator: false,
+        disablePageScrollWhenModalOpen: true,
+        animateOpenClose: true,
+        proudlyDisplayPoweredByUppy: true,
+        onRequestCloseModal: () => this.closeModal(),
+        showSelectedFiles: true,
+        locale: defaultLocale,
+        browserBackButtonClose: false
+    });
     uppy.use(Uppy.Url, {
         target: Dashboard
     });
