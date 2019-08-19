@@ -25,7 +25,7 @@ app.use((req, res, next) => {
     next()
 });
 
-app.listen(PORT, HOST);
+//app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 
 const options = {
