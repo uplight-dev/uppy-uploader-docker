@@ -41,3 +41,4 @@ const options = {
   }
   
 app.use(companion.app(options))
+console.log(`comp')
