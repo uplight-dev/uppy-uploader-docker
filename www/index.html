@@ -7,7 +7,9 @@
 <!-- 3. Initialize -->
 <div class="UppyDragDrop"></div>
 <script>
-    var uppy = Uppy.Core()
+    var uppy = Uppy({
+        autoProceed: true
+    })
     uppy.use(Uppy.DragDrop, { target: '.UppyDragDrop' })
     uppy.use(Uppy.Tus, { endpoint: 'https://localhost:1080/' })
 </script>
