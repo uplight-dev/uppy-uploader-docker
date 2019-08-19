@@ -6,4 +6,5 @@ services:
     - "8090:8080"
   tusd:
     image: tusproject/tusd
-    
+    ports:
+    - "1080:1080"
