@@ -33,7 +33,8 @@ const options = {
       host: '0.0.0.0:3020',
       protocol: 'http',
     },
-    filePath: '/app/upload'
+    filePath: '/app/upload',
+    debug: true
   }
   
 app.use(companion.app(options))
