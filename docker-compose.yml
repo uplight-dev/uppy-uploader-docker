@@ -8,6 +8,8 @@ services:
     - "8090:8080"
     - "3020:3020"
     - "9229:9229"
+    environment:
+    - VIRTUAL_HOST=up.danleahu.com
   tusd:
     image: tusproject/tusd
     ports:
