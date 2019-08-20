@@ -45,8 +45,8 @@ app.get('/', (req, res) => {
     res.send("Hello there, here's a response from companion")
   })
 
-app.listen(3020, "0.0.0.0");
-companion.socket(app, options)
+var svr = app.listen(3020, "0.0.0.0");
+companion.socket(svr, options)
 
 const app2 = express();
 app2.use(express.static('www'))
