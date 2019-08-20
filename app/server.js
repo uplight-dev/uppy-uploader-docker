@@ -12,7 +12,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 
-app.use(cors())
+// app.use(cors())
 app.use(bodyParser.json())
 
 app.use((req, res, next) => {
