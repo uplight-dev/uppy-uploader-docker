@@ -15,8 +15,6 @@ const app = express();
 app.use(cors())
 app.use(bodyParser.json())
 
-//app.use(express.static('www'))
-
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '*')
     res.setHeader(
@@ -41,7 +39,6 @@ const options = {
   }
   
 app.use(companion.app(options))
-console.log('companion')
 
 app.get('/', (req, res) => {
     res.setHeader('Content-Type', 'text/plain')
@@ -49,6 +46,8 @@ app.get('/', (req, res) => {
   })
 
 app.listen(3020, HOST);
-// console.log(`Running on http://${HOST}:${PORT}`);
+companion.socket(app, options)
 
-// companion.socket(app, options)
+const app2 = express();
+app2.use(express.static('www'))
+app2.listen(PORT, HOST);
