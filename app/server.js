@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
   })
 
 app.listen(3020, HOST);
-companion.socket(app, options)
+//companion.socket(app, options)
 
 const app2 = express();
 app2.use(express.static('www'))
