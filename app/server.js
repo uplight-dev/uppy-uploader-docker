@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
     res.send("Hello there, here's a response from companion")
   })
 
-// app.listen(PORT, HOST);
+app.listen(3020, HOST);
 // console.log(`Running on http://${HOST}:${PORT}`);
 
 // companion.socket(app, options)
