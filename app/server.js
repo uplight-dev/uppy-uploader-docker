@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 const options = {
     server: {
-      host: '0.0.0.0:3020',
+      host: 'localhost:3020',
       protocol: 'http',
     },
     filePath: '/app/upload',
