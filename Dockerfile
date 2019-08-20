@@ -16,4 +16,4 @@ RUN npm install
 #COPY ./app /app/
 
 EXPOSE 8080 3020 9229
-CMD [ "node", "/app/server.js" ]
+CMD [ "node", "start" ]
