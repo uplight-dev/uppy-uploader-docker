@@ -16,7 +16,9 @@
     uppy.use(Uppy.DragDrop, { target: '.UppyDragDrop' })
     uppy.use(Uppy.Tus, { endpoint: 'http://sbx01.id:1080/files/' })
     uppy.use(Dashboard, {
+        target: '#UppyDragDrop',
         trigger: '#select-files',
+        inline: true,
         showProgressDetails: true
     });
     uppy.use(Uppy.Url, {
