@@ -1,7 +1,8 @@
 'use strict';
 
 const express = require('express');
-var companion = require('@uppy/companion')
+const cors = require('cors')
+const companion = require('@uppy/companion')
 const bodyParser = require('body-parser')
 
 // Constants
