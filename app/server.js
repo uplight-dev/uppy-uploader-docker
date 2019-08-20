@@ -11,9 +11,10 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 
+app.use(cors())
 app.use(bodyParser.json())
 
-app.use(express.static('www'))
+//app.use(express.static('www'))
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '*')
@@ -39,9 +40,14 @@ const options = {
   }
   
 app.use(companion.app(options))
-console.log('comp')
+console.log('companion')
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+app.get('/', (req, res) => {
+    res.setHeader('Content-Type', 'text/plain')
+    res.send("Hello there, here's a response from companion")
+  })
 
-companion.socket(app, options)
+// app.listen(PORT, HOST);
+// console.log(`Running on http://${HOST}:${PORT}`);
+
+// companion.socket(app, options)

@@ -11,7 +11,7 @@
             "remoteRoot": "/app",
             "port": 9229,
             "address": "sbx01.id",
-            "localRoot": "${workspaceFolder}",
+            "localRoot": "${workspaceFolder}/app",
             "protocol": "inspector"
         }
         
