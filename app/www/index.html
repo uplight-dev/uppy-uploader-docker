@@ -13,7 +13,7 @@
     const Url = Uppy.Url;
     const Dashboard = Uppy.Dashboard
 
-    uppy.use(Uppy.DragDrop, { target: '.UppyDragDrop' })
+    uppy.use(Uppy.DragDrop, { target: null })
     uppy.use(Uppy.Tus, { endpoint: 'http://sbx01.id:1080/files/' })
     uppy.use(Dashboard, {
         target: 'body',
