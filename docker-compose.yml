@@ -7,6 +7,7 @@ services:
     ports: 
     - "8090:8080"
     - "3020:3020"
+    - "9229:9229"
   tusd:
     image: tusproject/tusd
     ports:
