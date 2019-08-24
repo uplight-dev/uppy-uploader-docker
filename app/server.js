@@ -34,7 +34,7 @@ const options = {
       host: '0.0.0.0:3020',
       protocol: 'http',
     },
-    filePath: '/upload',
+    filePath: '/tmp',
     debug: true
   }
   
