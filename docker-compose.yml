@@ -2,16 +2,19 @@ version: '3'
 services:
   web:
     build: .
-    volumes:
-    - ./upload:/app/upload
     ports: 
     - "8090:8080"
     - "3020:3020"
     - "9229:9229"
     environment:
     - VIRTUAL_HOST=up.danleahu.com
-    - VIRTUAL_PORT=8090
+    - VIRTUAL_PORT=8080
+    network_mode: bridge
   tusd:
     image: tusproject/tusd
+    volumes:
+    - ./upload:/upload
     ports:
     - "1080:1080"
+    network_mode: bridge
+
