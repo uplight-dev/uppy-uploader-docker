@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "express": "^4.16.1",
-    "@uppy/companion": "1.2.0",
+    "@uppy/companion": "1.13.2",
     "cors": "2.8.5"
   }
 }
